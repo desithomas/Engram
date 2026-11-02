@@ -28,7 +28,7 @@ https://projectbowbow.onrender.com/
 -MongoDB Atlas account and database
 -MongoDB network access configured for your development machine
 
-##Installation 
+## Installation 
 
 Clone the repo and move into the project directory: 
 
