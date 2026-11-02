@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0; 
+    background-color: rgba(255, 249, 242, 1); 
+    color: rgba(74, 64, 59, 1); 
+    
+}
+
+header{
+    background-color: rgba(255, 255, 255, 1); 
+    border-bottom: 1px solid rgba(234, 223, 213, 1); 
+    box-shadow: 0 2px 8px rgba(74, 64, 59, 0.3)
+}
+
+nav{ 
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 20px; 
+    max-width: 1100px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav > a{
+    color: rgba(224, 128, 87, 1); 
+    font-size: 1.25rem; 
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+nav > div a{
+    color: rgba(74, 64, 59, 1);
+    text-decoration: none;
+}
+
+nav >div a:hover{
+    color: rgba(224, 128, 87, 1)
+
+}
+
+/*big page layout*/
+
+main{
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 40px 20px;
+}
+
+main > section{
+    margin-bottom: 40px; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1); 
+    border: rgba(255, 255, 255, 1); 
+    border-radius: 14px; 
+    box-shadow: 0 4px 12px rgba(74, 64, 59, 0.3)
+}
+
+main > section:first-child{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/*multi target*/
+
+h1, h2, h3{
+    margin-top: 0; 
+}
+
+h1{
+    margin-bottom: 12px; 
+    color: rgba(224, 120, 87, 1); 
+    font-size: 2.5rem;
+}
+
+h3{
+    color: rgba(224, 120, 87, 1)
+}
+
+p{
+    line-height: 1.6; 
+}
+
+main > section:first-child p:first-child{
+    color: rgba(136, 123, 115, 1); 
+    font-weight: bold; 
+}
+
+/*form stuff*/
+
+form{
+   display: flex; 
+   flex-direction: column; 
+   gap: 20px;
+}
+
+input, select, textarea{
+    width: 100%; 
+    padding: 12px;
+    /* color: rgba(255, 252, 248, 1);  */
+    color: black;
+    border: 1px solid rgba(234, 223, 213, 1);
+    border-radius: 8px;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline: 2px solid rgba(224, 120, 87, 0.35);
+    border-color: rgba(224, 120, 87, 1); 
+}
+
+textarea{
+    min-height: 120px; 
+    resize: vertical;
+}
+
+input::placeholder, textarea::placeholder{
+    color: rgba(136, 123, 115, 1); 
+}
+
+/*File Upload */
+
+input[type="file"]{
+    padding: 16px; 
+    background-color: rgba(250, 245, 239, 1); 
+    border: 2px dashed rgba(234, 223, 213, 1); 
+}
+
+input[type="file"]:hover{
+    background-color: rgba(255, 239, 228, 1);
+    border-color: rgba(224, 128, 87, 1)
+}
+
+#selectedFiles{
+    margin: 0; 
+    padding: 14px 14px 14px 34px; 
+    background-color: rgba(239, 247, 241, 1); 
+    border: 1px solid rgba(170, 205, 187, 0.7); 
+    border-radius: 8px;
+}
+
+#selectedFiles li{
+    margin-bottom: 5px;
+    color: rgba(136, 123, 115, 1)
+}
+
+/*Button babes */
+
+button{
+    align-self: flex-start; 
+    padding: 12px 20px;
+    color: rgba(255, 255, 255, 1); 
+    background-color: rgba(224, 120, 87, 1); 
+    border: 0;
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    /* transition: 
+        background-color: 0.2s ease, 
+        transform: 0.2s ease; */
+}
+
+/* Assignment page stuff */
+
+main a {
+    color: rgba(224, 120, 87, 1); 
+}
+
+main > section:first-child{
+    display: inline-block;
+    padding: 12px 18px; 
+    color: rgba(255, 255, 255, 1); 
+    background-color: rgba(224, 120, 87, 1); 
+    border-radius: 8px; 
+    text-decoration: none; 
+}
+
+/* main > section:first-child a:hover{
+    background-color: rgba(201, 98, 68, 1); 
+
+} */
+
+/* search area in assignments  */
+
+#searchAssignments{
+    margin-top: 8px;
+}
+#assignmentListHeading {
+    margin-top: 24px;
+}
+
+#assignmentListHeading article{
+    padding: 20px; 
+    background-color: rgba(255, 249, 232, 1); 
+    border-left: 5px solid rgba(244, 211, 139. 1); 
+    border-radius: 8px;
+}
+
+#assignmentListHeading article p {
+    margin-bottom: 0; 
+    color: rgba(136, 123, 115, 1); 
+}
+
+/*Temp Footer*/
+
+footer{
+    padding: 30px 20px;
+    color: rgba(136, 123, 115, 1);
+    background-color: rgba(255, 255, 255, 1); 
+    border-top: 1px solid rgba(234, 223, 213, 1); 
+    text-align: center;
+}
+
+footer p{
+    margin: 6px;
+}
+
+/* media queries */
+
+@media (max-width: 650px){
+    nav{
+        align-items: flex-start; 
+        flex-direction: column;
+    }
+    nav > div{
+        align-items: flex-start; 
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    main{
+        padding: 24px 12px; 
+    }
+
+    main > section{
+         padding: 20px; 
+    }
+
+    h1{
+        font-size: 2rem; 
+    }
+
+    button{
+        width: 100%;
+    }
+}
+
+/*learning accessibility */
+
+@media (prefers-reduced-motion: reduce){
+    *, *:before{
+        transition: none;
+    }
+}

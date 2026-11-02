@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignments</title>
+    <link rel="stylesheet" href="css/styles.css"
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Navigation">
+        <a href="index.html"> Project BowBow</a>
+
+        <div>
+          <a href="index.html">Home</a>
+          <a href="index.html#features">Features</a>
+          <a href="assignments.html">Assignments</a>
+          <a href="index.html#about">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <p>Your workspace</p>
+        <h1>Assignments</h1>
+        <p>Keep track of your assignments, deadlines, and current progress</p>
+      </section>
+
+      <section aria-labelledby="addAssignmentHeader">
+        <h2 id="addAssignmentHeader">Add an assignment</h2>
+
+        <form>
+          <div>
+            <label for="assignmentTitle">Assignment title</label>
+            <input
+              type="text"
+              id="assignmentTitle"
+              name="assignmentTitle"
+              placeholder="Example: Predictive Modeling assignment 1"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="assignmentType">Assignment type</label>
+            <select id="assignmentType" name="assignmentType">
+              <option value="">Select a Type</option>
+              <option value="homework">Homework</option>
+              <option value="programming">Programming assignment</option>
+              <option value="writing">Writing Assignment</option>
+              <option value="math">Math</option>
+              <option value="Reading">Reading</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="dueDate">Due Date</label>
+            <input type="date" id="dueDate" name="dueDate" required />
+          </div>
+
+          <div>
+            <label for="estimatedTime">Estimated time</label>
+            <input
+              type="number"
+              id="estimatedTime"
+              name="estimatedTime"
+              min="0"
+              step="0.5"
+              placeholder="Example: 5 hours needed for this assignment."
+              required
+            />
+          </div>
+
+          <div>
+            <label for="energyLevel">Expected energy level</label>
+            <select id="energyLevel" name="energyLevel">
+              <option value="">Select your energy level</option>
+              <option value="low">Low energy</option>
+              <option value="medium">Medium energy</option>
+              <option value="high">High energy</option>
+            </select>
+          </div>
+        
+          <div>
+            <label for="courseName">Course</label>
+            <input type="text" id="courseName" name="courseName" placeholder="Example: DATA 624" required>
+          </div>
+
+          <div>
+            <label for="assignmentStatus">Status</label>
+            <select id="assignmentStatus" name="assignmentStatus">
+              <option value="notStarted">Not Started</option>
+              <option value="inProgress">In Progress</option>
+              <option value="completed">Completed </option>
+              <option value="overdue">Overdue</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="assignmentInstructions"
+              >Instructions or Description of Assignment</label
+            >
+            <textarea
+              id="assignmentInstructions"
+              name="assignmentInstructions"
+              rows="1"
+              placeholder="Write or paste the instructions or description for your assignment here."
+            ></textarea>
+
+            
+          </div>
+<div>
+              <label for="assignmentFiles">Upload files for assignment</label>
+              <input
+                type="file"
+                id="assignmentFiles"
+                name="assignmentFiles"
+                accept=".pdf,.py,.js,.md,.txt,.ts,.doc,.docx,.png,.jpg,.jpeg,.heic"
+                multiple
+              />
+
+              <p>
+                You can upload your assignment, code, notes, or related
+                materials here.
+              </p>
+            </div>
+
+            <ul id="selectedFiles">
+              <li>No files have been selected</li>
+            </ul>
+
+          <button type="submit">Save Assignment</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="assignmentList">
+        <h2 id="assignmentList">Your assignments</h2>
+
+        <div>
+          <label for="searchAssignments">Search assignments</label>
+          <input
+            type="search"
+            id="searchAssignments"
+            name="searchAssignments"
+            placeholder="Search by assignment or course name"
+          />
+        </div>
+
+        <div id="assignmentListHeading">
+          <article>
+            <h3>No assignments ...yet</h3>
+            <p>
+              Add your first assignment to get started on organizing your actual
+              workload.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Project BowBow</p>
+      <p>This application is currently in development</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
