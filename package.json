@@ -1,0 +1,28 @@
+{
+  "name": "project-solarflare",
+  "version": "1.0.0",
+  "description": "Project BowBow is the in-development codename for this demo day project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desithomas/demo-day.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/desithomas/demo-day/issues"
+  },
+  "homepage": "https://github.com/desithomas/demo-day#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mongodb": "^7.8.0"
+  }
+}
