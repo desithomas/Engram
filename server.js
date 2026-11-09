@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname,'frontend')))
 app.use('/api', apiRoutes)
 
 app.listen(port, function(){
-    console.log(`Project Bow Bow is running and sliding and cruising and breezing on port ${port}`)
+    console.log(`Engram is running and sliding and cruising and breezing on port ${port}`)
 })
 
 

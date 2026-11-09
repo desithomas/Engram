@@ -1,7 +1,7 @@
 {
   "name": "project-solarflare",
   "version": "1.0.0",
-  "description": "Project BowBow is the in-development codename for this demo day project.",
+  "description": "Engram is the in-development codename for this demo day project.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",

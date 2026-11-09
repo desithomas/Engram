@@ -15,7 +15,7 @@ If you use this product while it is still in development, please expect limited 
 
 ## View on website:
 
-https://projectbowbow.onrender.com/
+https://engram-ev44.onrender.com
   
 ## How to run locally
 
@@ -29,7 +29,7 @@ Clone the repo and move into the project directory:
 
 ```bash
 git clone <repository-url>
-cd project-solarflare
+cd Engram
 ```
 
 Install the dependencies with npm install 
