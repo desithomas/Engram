@@ -10,7 +10,8 @@ If you use this product while it is still in development, please expect limited 
 * **CSS3:** 
 * **JavaScript (ES6+):**
 
-  <img width="1189" height="1130" alt="Screenshot 2026-11-01 at 9 03 37 PM" src="https://github.com/user-attachments/assets/6ca3ad7a-f971-4d44-abea-03a69bd27c11" />
+ <img width="1247" height="1027" alt="Screenshot 2026-11-09 at 1 01 56 PM" src="https://github.com/user-attachments/assets/804373b1-61ca-4df7-8ddb-7328d015d138" />
+
 
 
 ## View on website:
